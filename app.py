@@ -6,6 +6,6 @@ import pandas as pd
 
 print("python= ", sys.version)
 print()
-print(numpy= ", np.version.version)
+print("numpy= ", np.version.version)
 print()
 print("pandas= ", pd.__version__)
