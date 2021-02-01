@@ -1,11 +1,15 @@
 import os
 from flask import Flask
+import numpy as np
+
+npver=np.version.version
+
 app = Flask(__name__)
 
 @app.route("/")
 def main():
     color = os.environ.get('COLOR', "green") 
-    message = "Welcome !!! This is "+color+" environment" 
+    message = "Welcome !!! This is "+color+" environment" + str(npver)
     return message
 
 @app.route('/how are you')
