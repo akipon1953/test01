@@ -1,15 +1,11 @@
-import os
-from flask import Flask
-app = Flask(__name__)
+#!/usr/bin/env python
 
-@app.route("/")
-def main():
-    return "Welcome!"
+import sys
+import numpy as np
+import pandas as pd
 
-@app.route('/how are you')
-def hello():
-    return 'I am good, how about you?'
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080)
-
+print("python= ", sys.version)
+print()
+print(numpy= ", np.version.version)
+print()
+print("pandas= ", pd.__version__)
